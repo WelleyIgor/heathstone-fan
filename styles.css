@@ -3,31 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
-.botoes {
-  list-style: none;
-  text-decoration-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-}
-li a {
-  border: 2px solid white;
-  padding: 2px;
+a {
   text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 7px;
 }
-.logo-heathstone {
-  width: 200px;
-  height: 95px;
+.navbarBtn {
+  font-size: 20px;
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+.navbarBtn:hover {
+  border-bottom: 2px solid white;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 10px 25px;
+  padding: 1px;
   align-items: center;
+}
+.logo-heathstone {
+  display: flex;
+  width: 200px;
+  height: 95px;
 }
 
 .paragraph {
@@ -127,6 +128,17 @@ iframe {
   height: 400px;
 }
 
+@media (max-width: 768px) {
+  li a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 600px) {
   .item {
     flex-basis: 100%;
